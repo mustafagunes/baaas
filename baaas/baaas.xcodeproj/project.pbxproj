@@ -9,19 +9,25 @@
 /* Begin PBXBuildFile section */
 		2E93F94F2B1B86400021B349 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E93F94E2B1B86400021B349 /* AppDelegate.swift */; };
 		2E93F9512B1B86400021B349 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E93F9502B1B86400021B349 /* SceneDelegate.swift */; };
-		2E93F9532B1B86400021B349 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E93F9522B1B86400021B349 /* ViewController.swift */; };
+		2E93F9532B1B86400021B349 /* BaaasHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E93F9522B1B86400021B349 /* BaaasHomeViewController.swift */; };
 		2E93F9582B1B86410021B349 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E93F9572B1B86410021B349 /* Assets.xcassets */; };
 		2E93F95B2B1B86410021B349 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E93F9592B1B86410021B349 /* LaunchScreen.storyboard */; };
+		2E93FA2F2B1BAB170021B349 /* training-docs in Resources */ = {isa = PBXBuildFile; fileRef = 2E93FA2E2B1BAB170021B349 /* training-docs */; };
+		2E93FA322B1BAE010021B349 /* VideoFileHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E93FA312B1BAE010021B349 /* VideoFileHandler.swift */; };
+		2EAC55082B1BB62700DF4A58 /* TrainingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAC55072B1BB62700DF4A58 /* TrainingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2E93F94B2B1B86400021B349 /* baaas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = baaas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E93F94E2B1B86400021B349 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2E93F9502B1B86400021B349 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2E93F9522B1B86400021B349 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2E93F9522B1B86400021B349 /* BaaasHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaaasHomeViewController.swift; sourceTree = "<group>"; };
 		2E93F9572B1B86410021B349 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E93F95A2B1B86410021B349 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2E93F95C2B1B86410021B349 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E93FA2E2B1BAB170021B349 /* training-docs */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "training-docs"; path = "../training-docs"; sourceTree = "<group>"; };
+		2E93FA312B1BAE010021B349 /* VideoFileHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoFileHandler.swift; sourceTree = "<group>"; };
+		2EAC55072B1BB62700DF4A58 /* TrainingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +44,7 @@
 		2E93F9422B1B86400021B349 = {
 			isa = PBXGroup;
 			children = (
+				2E93FA2E2B1BAB170021B349 /* training-docs */,
 				2E93F94D2B1B86400021B349 /* baaas */,
 				2E93F94C2B1B86400021B349 /* Products */,
 			);
@@ -54,14 +61,24 @@
 		2E93F94D2B1B86400021B349 /* baaas */ = {
 			isa = PBXGroup;
 			children = (
+				2E93FA332B1BAE0F0021B349 /* Controllers */,
 				2E93F94E2B1B86400021B349 /* AppDelegate.swift */,
 				2E93F9502B1B86400021B349 /* SceneDelegate.swift */,
-				2E93F9522B1B86400021B349 /* ViewController.swift */,
+				2E93FA312B1BAE010021B349 /* VideoFileHandler.swift */,
 				2E93F9572B1B86410021B349 /* Assets.xcassets */,
 				2E93F9592B1B86410021B349 /* LaunchScreen.storyboard */,
 				2E93F95C2B1B86410021B349 /* Info.plist */,
 			);
 			path = baaas;
+			sourceTree = "<group>";
+		};
+		2E93FA332B1BAE0F0021B349 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2E93F9522B1B86400021B349 /* BaaasHomeViewController.swift */,
+				2EAC55072B1BB62700DF4A58 /* TrainingViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +141,7 @@
 			files = (
 				2E93F95B2B1B86410021B349 /* LaunchScreen.storyboard in Resources */,
 				2E93F9582B1B86410021B349 /* Assets.xcassets in Resources */,
+				2E93FA2F2B1BAB170021B349 /* training-docs in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,8 +152,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E93F9532B1B86400021B349 /* ViewController.swift in Sources */,
+				2EAC55082B1BB62700DF4A58 /* TrainingViewController.swift in Sources */,
+				2E93F9532B1B86400021B349 /* BaaasHomeViewController.swift in Sources */,
 				2E93F94F2B1B86400021B349 /* AppDelegate.swift in Sources */,
+				2E93FA322B1BAE010021B349 /* VideoFileHandler.swift in Sources */,
 				2E93F9512B1B86400021B349 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,12 +295,13 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8DVHX5WRRH;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = baaas/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -301,12 +322,13 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8DVHX5WRRH;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = baaas/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
